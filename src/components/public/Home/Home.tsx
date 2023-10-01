@@ -1,4 +1,5 @@
 import { Box, Button, Container, Grid, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
     return (
@@ -34,6 +35,8 @@ export const Home = () => {
                             variant="contained"
                             color="primary"
                             sx={{ textTransform: "none" }}
+                            component={Link}
+                            to="/signup"
                         >
                             Sign up
                         </Button>

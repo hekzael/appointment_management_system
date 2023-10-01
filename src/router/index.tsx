@@ -1,6 +1,8 @@
 import { Outlet, RouteObject, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { PublicLayout } from "../components/layouts";
 import { Home } from "../components/public/Home";
+import { Login } from "../components/public/Login";
+import { Signup } from "../components/public/Signup";
 
 const router: RouteObject[] = [
   {
@@ -11,15 +13,15 @@ const router: RouteObject[] = [
         path: "/",
         element: <Home />,
       },
-      {
-        path: "login",
-        element: <h1>Login</h1>,
-      },
-      {
-        path: "signup",
-        element: <h1>Signup</h1>,
-      },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "signup",
+    element: <Signup />,
   },
   {
     path: "/private",
